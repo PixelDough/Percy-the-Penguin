@@ -1,0 +1,11 @@
+Attack Mechanic
+- Percy throws a snow ball forward to try and stun enemies.  
+- While an enemy is stunned, Percy must pass by them, wrapping them into a present and 
+sending it up to Santa.
+- If an enemy attacks the snowball, then it cancels Percy's snowball attack.
+
+Enemy Ideas
+- Tank that shoots snowballs at you horizontally
+- Icicle that kills / freezes you
+- Winter Warlock that freezes you and teleports around
+- Bouncer the Beach Ball.
