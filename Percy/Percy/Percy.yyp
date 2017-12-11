@@ -39,6 +39,25 @@
     },
     "resources": [
         {
+            "Key": "02b37968-a33e-498c-a3f9-72c3bde1c14a",
+            "Value": {
+                "id": "10978b23-8354-4cb0-8130-ec56694acd29",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/StageBonus\/StageBonus.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "03314995-970f-4fb7-b0c3-f98a6f015497",
             "Value": {
                 "id": "464bd80f-a645-4e2f-882e-11c19ea205eb",
@@ -131,6 +150,25 @@
                 ],
                 "resourcePath": "objects\/obj_robot\/obj_robot.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0fa3adb3-5e21-451d-94c6-fd9c93fc5b85",
+            "Value": {
+                "id": "d9d6bdcf-1299-4c2c-8322-2625d382be4a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/Stage7\/Stage7.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -815,6 +853,25 @@
                 ],
                 "resourcePath": "views\/503a3777-ea13-4cbe-aeef-3ab7c50d0c1a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "520d5380-0751-44f8-a5dd-25dedca34b66",
+            "Value": {
+                "id": "2cf7a23e-828e-4d08-8f1e-5ce80bfb78a4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/GameOver\/GameOver.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1597,6 +1654,25 @@
             }
         },
         {
+            "Key": "88fc588e-8092-4786-a51b-a62df7e5bffa",
+            "Value": {
+                "id": "63d333d3-63f2-4569-862e-44d8ea2a8c57",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_bonus\/spr_bonus.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8b2c1ef1-35b1-4ee9-b9ff-23ab6f240b61",
             "Value": {
                 "id": "c775a5af-9cf1-47ea-98ae-7c1513488814",
@@ -2050,6 +2126,25 @@
                 ],
                 "resourcePath": "views\/c0b8fa87-2246-4288-b08d-338ce97d5cf0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c424f9d0-c974-4d5a-a036-a3e2e53c9034",
+            "Value": {
+                "id": "ad5a4f7c-939a-4b1f-a3f6-0f1855fd406e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_game_over\/spr_game_over.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

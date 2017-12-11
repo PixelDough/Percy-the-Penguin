@@ -13,6 +13,12 @@ if room != parent and room != MainMenu {
 		draw_sprite(spr_percy_life, 0, 6+i*8+(i), 222);
 	}
 	
+	for (var _x = 0; _x < 5; _x ++) {
+		if global.bonus[_x] == true {
+			draw_sprite(spr_bonus, _x, 10+(_x*16), 16);
+		}
+	}
+	
 	draw_set_halign(fa_center);
 	draw_set_color(c_red);
 	draw_text(128,0,"HIGH SCORE");
@@ -34,12 +40,12 @@ if room != parent and room != MainMenu {
 	} else {
 		instance_activate_all();
 	}
-	if global.lives_ <= 0 {
+	if room == GameOver {
 		draw_set_color(c_red);
 		draw_set_halign(fa_center);
-		draw_text(128, 112, "GAME OVER");
+		draw_text(128, 64, "GAME OVER");
 		if (global.time%30) <= 15 {
-			draw_text(128, 124, "PRESS ANY KEY");
+			draw_text(128, 80, "PRESS ANY KEY");
 		}
 	}
 }

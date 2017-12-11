@@ -7,6 +7,8 @@ global.time = 0;
 
 global.paused = false;
 
+
+
 //global.snow = part_type_create();
 //part_type_shape(global.snow,pt_shape_pixel);            
 //part_type_size(global.snow,1,1,0,0);                    
