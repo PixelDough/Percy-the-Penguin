@@ -23,4 +23,23 @@ if room != parent and room != MainMenu {
 		draw_set_halign(fa_right);
 		draw_text(254,0,(room_get_name(room)));
 	}
+	if global.paused == true {
+		instance_deactivate_all(true);
+		draw_sprite(paused_image, 0, 0, 0);
+		draw_set_color(c_white);
+		draw_set_halign(fa_center);
+		if (global.time%30) <= 15 {
+			draw_text(128, 112, "PAUSED");
+		}
+	} else {
+		instance_activate_all();
+	}
+	if global.lives_ <= 0 {
+		draw_set_color(c_red);
+		draw_set_halign(fa_center);
+		draw_text(128, 112, "GAME OVER");
+		if (global.time%30) <= 15 {
+			draw_text(128, 124, "PRESS ANY KEY");
+		}
+	}
 }

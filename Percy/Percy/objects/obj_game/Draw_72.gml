@@ -1,6 +1,4 @@
-//repeat(10)
-//    {
-//    var xx = random(256);
-//    var yy = random(224);
-//    part_particles_create(global.P_System, xx, yy, global.snow, 1);
-//    }
+//if drop_shadow != noone {
+//	drop_shadow.image_blend = c_black;
+//	draw_sprite(drop_shadow, 0, 0, -2);
+//}
