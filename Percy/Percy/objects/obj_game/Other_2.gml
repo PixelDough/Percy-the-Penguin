@@ -7,7 +7,7 @@ global.time = 0;
 
 global.paused = false;
 
-
+global.lastRoom = parent;
 
 //global.snow = part_type_create();
 //part_type_shape(global.snow,pt_shape_pixel);            

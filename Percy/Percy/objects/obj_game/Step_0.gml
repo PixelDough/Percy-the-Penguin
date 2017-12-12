@@ -34,6 +34,7 @@ if keyboard_check_pressed(vk_enter) {
 }
 
 if global.bonus[0] == true and  global.bonus[1] == true and global.bonus[2] == true and global.bonus[3] == true and global.bonus[4] == true {
+	global.lastRoom = room;
 	room = StageBonus;
 	global.bonus = [false,false,false,false,false]
 }

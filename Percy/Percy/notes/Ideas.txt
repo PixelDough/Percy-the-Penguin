@@ -11,8 +11,4 @@ Enemy Ideas
 - Bouncer the Beach Ball.
 
 TODO
-- Add Items flashing before the next stage
-- Add Item scores
-- Add bonus items (P E R C Y)
-- Add bonus stage
 - Add more stages (5 per new enemy)
