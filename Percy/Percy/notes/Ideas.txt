@@ -11,4 +11,4 @@ Enemy Ideas
 - Bouncer the Beach Ball.
 
 TODO
-- Add more stages (5 per new enemy)
+- Add more stages (3 per new enemy)
