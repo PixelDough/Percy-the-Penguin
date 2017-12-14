@@ -12,3 +12,5 @@ Enemy Ideas
 
 TODO
 - Add more stages (3 per new enemy)
+
+Oibits sounds like a cool ficitonal currency

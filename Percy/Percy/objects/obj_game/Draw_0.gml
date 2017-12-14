@@ -8,7 +8,7 @@ if room == MainMenu {
 	draw_text_color(128,208,"@ PIXELDOUGH",c_white,c_white,c_white,c_white,100);
 }
 
-if room != parent and room != MainMenu {
+if instance_exists(obj_player) {
 	for (i = 0; i < global.lives_; i++) {
 		draw_sprite(spr_percy_life, 0, 6+i*8+(i), 222);
 	}
@@ -18,12 +18,6 @@ if room != parent and room != MainMenu {
 			draw_sprite(spr_bonus, _x, 10+(_x*16), 16);
 		}
 	}
-	
-	draw_set_halign(fa_center);
-	draw_set_color(c_red);
-	draw_text(128,0,"HIGH SCORE");
-	draw_set_color(c_white);
-	draw_text(128,8,global.score_);
 	
 	if instance_exists(obj_player) {
 		draw_set_halign(fa_right);
@@ -40,12 +34,19 @@ if room != parent and room != MainMenu {
 	} else {
 		instance_activate_all();
 	}
-	if room == GameOver {
-		draw_set_color(c_red);
-		draw_set_halign(fa_center);
-		draw_text(128, 64, "GAME OVER");
-		if (global.time%30) <= 15 {
-			draw_text(128, 80, "PRESS ANY KEY");
-		}
+}
+
+if room == GameOver {
+	draw_set_color(c_red);
+	draw_set_halign(fa_center);
+	draw_text(128, 64, "GAME OVER");
+	if (global.time%30) <= 15 {
+		draw_text(128, 80, "PRESS ANY KEY");
 	}
 }
+	
+draw_set_halign(fa_center);
+draw_set_color(c_red);
+draw_text(128,0,"HIGH SCORE");
+draw_set_color(c_white);
+draw_text(128,8,global.score_);
