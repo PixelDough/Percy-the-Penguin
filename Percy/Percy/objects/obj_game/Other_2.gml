@@ -8,5 +8,3 @@ global.time = 0;
 global.paused = false;
 
 global.lastRoom = parent;
-
-global.recording = [];
