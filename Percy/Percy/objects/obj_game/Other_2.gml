@@ -9,15 +9,4 @@ global.paused = false;
 
 global.lastRoom = parent;
 
-//global.snow = part_type_create();
-//part_type_shape(global.snow,pt_shape_pixel);            
-//part_type_size(global.snow,1,1,0,0);                    
-//part_type_scale(global.snow,1,1);                       
-//part_type_color1(global.snow,c_white);                  
-//part_type_alpha1(global.snow,1);                        
-//part_type_speed(global.snow,2,2,0,0);            
-//part_type_direction(global.snow,270,270,0,20);            
-//part_type_orientation(global.snow,0,0,0,0,1);           
-//part_type_blend(global.snow,0);                         
-//part_type_life(global.snow,60,60);    
-//global.P_System=part_system_create();
+global.recording = [];

@@ -1,6 +1,6 @@
-//Gain a life at 10000
+//Gain a life at 5000
 for (var _i=0; _i<=other.pts; _i++) {
-	if (global.score_ + _i) % 10000 == 0 and global.score_ % 10000 != 0 {
+	if (global.score_ + _i) % 5000 == 0 and global.score_ % 5000 != 0 {
 		global.lives_ += 1;
 	}
 }

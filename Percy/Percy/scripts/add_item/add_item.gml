@@ -6,7 +6,7 @@ var _y = argument1;
 
 var _itemRoll = irandom_range(0,100);
 
-var _item = instance_create_layer(_x,_y,"Instances",obj_item);
+var _item = instance_create_layer(_x,_y-16,"Instances",obj_item);
 
 if _itemRoll <= 40 {
 	_item.sprite_index = spr_items50;
