@@ -567,6 +567,14 @@
             }
         },
         {
+            "Key": "5f0df24b-b687-4a4f-b618-a5ad5b7d9328",
+            "Value": {
+                "id": "82d116d8-2e0a-44d0-914e-7f67f50730a3",
+                "resourcePath": "extensions\\Easy_Control_Input\\Easy_Control_Input.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "60895c18-b6e6-44b0-beb9-334d92812c53",
             "Value": {
                 "id": "706c1f6e-6752-4bb1-a8f7-743020e3aae2",
@@ -1023,6 +1031,14 @@
             }
         },
         {
+            "Key": "c97c93ec-8b12-4ec8-b4e9-7d67a917d80d",
+            "Value": {
+                "id": "a72df338-a6bc-4ed9-8862-6f966d23ad4a",
+                "resourcePath": "notes\\compatibility_report_151217_1950285028.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "ca24429e-e476-4388-89b3-866e442842e3",
             "Value": {
                 "id": "7e0c2f75-6635-49c1-876d-7f9fdfc05af3",
@@ -1132,6 +1148,14 @@
                 "id": "92fc185b-9f4a-4f89-aadb-0d1d8dcddbfc",
                 "resourcePath": "sounds\/snd_theme\/snd_theme.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "d6d454ba-eed3-4ea0-8530-add74286ac91",
+            "Value": {
+                "id": "260d2226-a1d0-4e29-84a1-6cf93f52e198",
+                "resourcePath": "objects\\keyLogger\\keyLogger.yy",
+                "resourceType": "GMObject"
             }
         },
         {
