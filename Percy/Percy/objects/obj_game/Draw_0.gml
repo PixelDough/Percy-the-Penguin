@@ -4,8 +4,13 @@ if room == MainMenu {
 	
 	draw_set_halign(fa_center);
 	draw_text_color(128,72,"SAVES CHRISTMAS",c_white,c_white,c_white,c_white,100);
-	draw_text_color(128,112,"PRESS N TO START",c_white,c_white,c_white,c_white,100);
+	draw_text_color(128,112,"PRESS N TO START\nPRESS M TO SEE TUTORIAL",c_white,c_white,c_white,c_white,100);
 	draw_text_color(128,208,"@ PIXELDOUGH",c_white,c_white,c_white,c_white,100);
+}
+
+if room == Win {
+	draw_text_color(128,72,"SAVED CHRISTMAS",c_white,c_white,c_white,c_white,100);
+	draw_text_color(128,112,"THANKS FOR PLAYING THE BETA!\n\nPRESS N TO RESTART",c_white,c_white,c_white,c_white,100);
 }
 
 if instance_exists(obj_player) {
@@ -23,6 +28,9 @@ if instance_exists(obj_player) {
 		draw_set_halign(fa_right);
 		draw_text(254,0,(room_get_name(room)));
 	}
+}
+
+if room != MainMenu and room != Demo and room != Win {
 	if global.paused == true {
 		instance_deactivate_all(true);
 		draw_sprite(paused_image, 0, 0, 0);

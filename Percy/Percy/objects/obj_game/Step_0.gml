@@ -10,29 +10,45 @@ if room == MainMenu {
 		reset_game();
 		music(snd_theme);
 	}
+	if input.action_two_pressed {
+		room = Demo;
+		reset_game();
+	}
+}
+if room == Win {
+	if input.action_one_pressed {
+		room = MainMenu;
+	}
 }
 
 //If you're in the game
-if instance_exists(obj_player) and !global.paused {
-	//DEBUG CLICKING
-	if mouse_check_button_pressed(mb_left) {
-		var _item = add_item(mouse_x,mouse_y);
-		_item.sprite_index = spr_items;
-		_item.image_index = random(_item.image_number);
-		_item.pts = 1000;
-	}
-	//If all enemies have been defeated
-	if instance_number(obj_enemy_parent) == 0 {
-		if alarm[0] <= 0 {
-			alarm[0] = 240;
-			with obj_present {
-				instance_destroy();
+if instance_exists(obj_player) {
+	if !global.paused {
+		//DEBUG CLICKING
+		if mouse_check_button_pressed(mb_left) {
+			var _item = add_item(mouse_x,mouse_y);
+			_item.sprite_index = spr_items;
+			_item.image_index = random(_item.image_number);
+			_item.pts = 1000;
+		}
+		//If all enemies have been defeated
+		if instance_number(obj_enemy_parent) == 0 and !instance_exists(obj_attractCutscene) {
+			if alarm[0] <= 0 {
+				alarm[0] = 240;
+				with obj_present {
+					instance_destroy();
+				}
+				sound(snd_transform);
 			}
-			sound(snd_transform);
 		}
 	}
+}
+
+if room != MainMenu and room != Demo and room != Win {
 	//Pause game
 	if keyboard_check_pressed(vk_escape) {
+		var _width = surface_get_width(application_surface);
+		var _height = surface_get_height(application_surface);
 		paused_image = sprite_create_from_surface(application_surface, 0, 0, _width, _height, false, false, 0, 0);
 		global.paused = !global.paused;
 	}
@@ -54,9 +70,6 @@ if global.bonus[0] == true and  global.bonus[1] == true and global.bonus[2] == t
 	room = StageBonus;
 	global.bonus = [false,false,false,false,false]
 }
-
-//var _width = surface_get_width(application_surface);
-//var _height = surface_get_height(application_surface);
 //drop_shadow = sprite_create_from_surface(application_surface, 0, 0, _width, _height, true, false, 0, 0);
 
 if room == GameOver and keyboard_check_pressed(vk_anykey) {
