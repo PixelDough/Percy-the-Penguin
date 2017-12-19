@@ -1,2 +1,2 @@
 ACTION = tank.hit;
-alarm[0] = 120;
+alarm[0] = 180;

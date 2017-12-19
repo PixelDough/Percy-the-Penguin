@@ -1,2 +1,2 @@
 ACTION = bouncer.hit;
-alarm[0] = 120;
+alarm[0] = 180;

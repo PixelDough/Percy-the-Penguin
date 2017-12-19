@@ -116,7 +116,7 @@ if currentState == cutSceneStates.Active {
 		case 8:
 			draw_set_color(c_white);
 			draw_set_halign(fa_center);
-			draw_text(128, 78, "THEY DISSAPEAR OVER TIME!");
+			draw_text(128, 78, "THEY DISAPPEAR OVER TIME!");
 			input.l[0] = false;
 			if obj_player.x >= 110 {
 				input.l[0] = true;

@@ -9,14 +9,12 @@ if room == MainMenu {
 		room = Stage1;
 		reset_game();
 		music(snd_theme);
-		global.players = 1;
 	}
-	if input.action_one_pressed[1] {
-		room = Stage1;
-		reset_game();
-		music(snd_theme);
-		global.players = 2;
+	//Toggle player numbers
+	if input.r_p[0] or input.l_p[0] {
+		if global.players == 1 global.players = 2 else global.players = 1;
 	}
+	//Go to tutorial
 	if keyboard_check_pressed(ord("T")) {
 		room = TUTORIAL;
 		reset_game();
