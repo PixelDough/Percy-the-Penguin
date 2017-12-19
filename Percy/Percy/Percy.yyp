@@ -34,7 +34,7 @@
             "Key": "02b37968-a33e-498c-a3f9-72c3bde1c14a",
             "Value": {
                 "id": "10978b23-8354-4cb0-8130-ec56694acd29",
-                "resourcePath": "rooms\/StageBonus\/StageBonus.yy",
+                "resourcePath": "rooms\\BONUS\\BONUS.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -116,6 +116,14 @@
                 "id": "184e243c-5a41-446d-8b00-0b0b2a43e202",
                 "resourcePath": "rooms\\Win\\Win.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "1946e07b-8370-456c-8361-33d366d9cf6f",
+            "Value": {
+                "id": "baac20d6-4a03-4174-8ae6-850c39070dc0",
+                "resourcePath": "sounds\\snd_boss\\snd_boss.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -388,6 +396,14 @@
                 "id": "edcec0e7-0656-464c-9e8c-f8f9b2f277ad",
                 "resourcePath": "views\/46e6b190-0f96-44fd-9f25-ebb8cd71565c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "48a99e5a-cd28-4df6-abd2-20bfa3986753",
+            "Value": {
+                "id": "1d6f153e-55cf-4099-943f-e173a74a897d",
+                "resourcePath": "sounds\\snd_bonus\\snd_bonus.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -738,7 +754,7 @@
             "Key": "7ec950e6-af20-4e76-8952-c4a1cb5b4f7d",
             "Value": {
                 "id": "5ce14765-3efb-40e5-8a3e-d5f115a49708",
-                "resourcePath": "rooms\\Demo\\Demo.yy",
+                "resourcePath": "rooms\\TUTORIAL\\TUTORIAL.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -747,6 +763,14 @@
             "Value": {
                 "id": "80bf4766-6692-4d76-9f85-e99143005bfb",
                 "resourcePath": "sprites\/spr_train_walk\/spr_train_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "80489376-51e5-4e1d-9917-318050b22063",
+            "Value": {
+                "id": "b4f7ddc8-6e8a-4c13-8a12-c7942917f607",
+                "resourcePath": "sprites\\spr_snowball_polly\\spr_snowball_polly.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -836,6 +860,14 @@
                 "id": "e68ccce5-9006-4e48-adc0-782af8bce423",
                 "resourcePath": "sprites\/spr_platform\/spr_platform.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8cd42445-2eb8-4fbe-bc53-c985543d9a5f",
+            "Value": {
+                "id": "869b297d-d2f6-409f-9217-06745fd6f446",
+                "resourcePath": "objects\\obj_snowball_percy\\obj_snowball_percy.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1099,6 +1131,14 @@
             "Value": {
                 "id": "10788e1e-2904-4fe6-8cf2-e4cfdedf880a",
                 "resourcePath": "objects\/obj_tank\/obj_tank.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cd6b02eb-c471-4261-bd18-8184659f8493",
+            "Value": {
+                "id": "20c5866c-fd38-4186-ae98-c7a4b22d88cc",
+                "resourcePath": "objects\\obj_snowball_polly\\obj_snowball_polly.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -1,1 +1,1 @@
-event_user(GET_INPUT);
+event_user(ACTION);

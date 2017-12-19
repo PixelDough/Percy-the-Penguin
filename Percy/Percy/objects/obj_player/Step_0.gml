@@ -10,10 +10,10 @@ if ACTION != player.die {
 	//Horizontal movements
 	do_physics(true);	
 	
-	if input.l vx = max(vx - spd, -spd_max);
-	if input.r vx = min(vx + spd, spd_max);
+	if input.l[player_number] vx = max(vx - spd, -spd_max);
+	if input.r[player_number] vx = min(vx + spd, spd_max);
 
-	if (!input.l and !input.r) or (input.l and input.r) {
+	if (!input.l[player_number] and !input.r[player_number]) or (input.l[player_number] and input.r[player_number]) {
 		vx *= slip;
 	}
 
@@ -22,7 +22,7 @@ if ACTION != player.die {
 		ACTION = player.idle;
 	}
 
-	if input.action_one_pressed and grounded {
+	if input.action_one_pressed[player_number] and grounded {
 		vy = -jh;
 		sound(snd_jump);
 	}
@@ -31,10 +31,10 @@ if ACTION != player.die {
 		vx *= .85;
 	}
 	
-	if input.action_two_pressed and instance_number(obj_snowball_player) == 0 {
+	if input.action_two_pressed[player_number] and instance_number(snowball_type) == 0 {
 		ACTION = player.attack;
 		image_index = 0;
-		snowball = instance_create_layer(x, y, "Instances", obj_snowball_player);
+		snowball = instance_create_layer(x, y, "Instances", snowball_type);
 		snowball.dir = dir
 	}
 }

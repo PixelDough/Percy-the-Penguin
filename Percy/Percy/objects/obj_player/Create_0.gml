@@ -13,3 +13,7 @@ startx = x;
 starty = y;
 snowball = noone;
 ACTION = player.idle;
+
+player_number = 0;
+
+snowball_type = obj_snowball_percy;

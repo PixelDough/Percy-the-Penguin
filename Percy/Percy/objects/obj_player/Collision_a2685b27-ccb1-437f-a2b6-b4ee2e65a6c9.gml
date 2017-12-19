@@ -6,6 +6,6 @@ if !other.hit {
 			sound(snd_die);
 		}
 	}
-} else {
+} else if other.object_index != obj_ghost_boss {
 	instance_destroy(other);
 }

@@ -7,7 +7,8 @@ draw_sprite_ext(sprite_index,image_index,x,y,dir,1,0,c_white,100-(100*(invincibl
 if ACTION == player.die {
 	if bbox_top > 224 {
 		if !instance_exists(obj_splash_player) {
-			instance_create_layer(x,224,"Instances",obj_splash_player);
+			var _splash = instance_create_layer(x,224,"Instances",obj_splash_player);
+			_splash.creator = id;
 		}
 	}
 }

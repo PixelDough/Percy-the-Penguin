@@ -1,6 +1,6 @@
 
 {
-    "name": "Demo",
+    "name": "TUTORIAL",
     "id": "7ec950e6-af20-4e76-8952-c4a1cb5b4f7d",
     "creationCodeFile": "",
     "inheritCode": true,

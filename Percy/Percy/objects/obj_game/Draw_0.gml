@@ -4,13 +4,16 @@ if room == MainMenu {
 	
 	draw_set_halign(fa_center);
 	draw_text_color(128,72,"SAVES CHRISTMAS",c_white,c_white,c_white,c_white,100);
-	draw_text_color(128,112,"PRESS N TO START\nPRESS M TO SEE TUTORIAL",c_white,c_white,c_white,c_white,100);
+	draw_text_color(128,112,"PRESS F TO START\nOR M FOR 2 PLAYER\n\nPRESS G TO SEE TUTORIAL",c_white,c_white,c_white,c_white,100);
 	draw_text_color(128,208,"@ PIXELDOUGH",c_white,c_white,c_white,c_white,100);
 }
 
 if room == Win {
-	draw_text_color(128,72,"SAVED CHRISTMAS",c_white,c_white,c_white,c_white,100);
-	draw_text_color(128,112,"THANKS FOR PLAYING THE BETA!\n\nPRESS N TO RESTART",c_white,c_white,c_white,c_white,100);
+	draw_text_color(128,72,"SAVED CHRISTMAS!",c_white,c_white,c_white,c_white,100);
+	draw_text_color(128,112,"THANKS FOR PLAYING!",c_white,c_white,c_white,c_white,100);
+	draw_text_color(128,144,"GAME BY ADAM WORRELL",c_white,c_white,c_white,c_white,100);
+	draw_text_color(128,160,"MUSIC BY LILY PRICE",c_white,c_white,c_white,c_white,100);
+	draw_text_color(128,192,"PRESS F TO RESTART",c_white,c_white,c_white,c_white,100);
 }
 
 if instance_exists(obj_player) {
@@ -30,7 +33,7 @@ if instance_exists(obj_player) {
 	}
 }
 
-if room != MainMenu and room != Demo and room != Win {
+if room != MainMenu and room != TUTORIAL and room != Win {
 	if global.paused == true {
 		instance_deactivate_all(true);
 		draw_sprite(paused_image, 0, 0, 0);

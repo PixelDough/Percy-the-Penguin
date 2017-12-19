@@ -18,7 +18,7 @@ if currentState == cutSceneStates.Active {
 		case 1:
 			draw_set_color(c_white);
 			draw_set_halign(fa_center);
-			draw_text(128, 78, "USE A/D TO MOVE\nAND N TO JUMP");
+			draw_text(128, 78, "USE A/D TO MOVE\nAND F TO JUMP");
 			input.action_one_pressed = false;
 			if counter == 1 or counter == 60 {
 				input.action_one_pressed = true;
@@ -33,9 +33,9 @@ if currentState == cutSceneStates.Active {
 			draw_set_color(c_white);
 			draw_set_halign(fa_center);
 			if counter < 60 {
-				draw_text(128, 78, "USE M TO THROW A SNOWBALL");
+				draw_text(128, 78, "USE G TO THROW A SNOWBALL");
 			} else {
-				draw_text(128, 78, "USE M TO THROW A SNOWBALL\nONLY ONE ON SCREEN\nAT A TIME");
+				draw_text(128, 78, "USE G TO THROW A SNOWBALL\nONLY ONE ON SCREEN\nAT A TIME");
 			}
 			input.action_two_pressed = false;
 			if counter == 1 {

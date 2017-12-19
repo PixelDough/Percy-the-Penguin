@@ -1,5 +1,5 @@
 event_inherited();
-with obj_player {
+with creator {
 	if global.lives_-1 > 0 {
 		x = startx;
 		y = starty;
