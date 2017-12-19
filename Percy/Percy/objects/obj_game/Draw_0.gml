@@ -4,7 +4,7 @@ if room == MainMenu {
 	
 	draw_set_halign(fa_center);
 	draw_text_color(128,72,"SAVES CHRISTMAS",c_white,c_white,c_white,c_white,100);
-	draw_text_color(128,112,"PRESS F TO START\nOR M FOR 2 PLAYER\n\nPRESS G TO SEE TUTORIAL",c_white,c_white,c_white,c_white,100);
+	draw_text_color(128,112,"PRESS F TO START\nOR M FOR 2 PLAYER\n\nPRESS T TO SEE TUTORIAL",c_white,c_white,c_white,c_white,100);
 	draw_text_color(128,208,"@ PIXELDOUGH",c_white,c_white,c_white,c_white,100);
 }
 

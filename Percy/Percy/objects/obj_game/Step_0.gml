@@ -17,7 +17,7 @@ if room == MainMenu {
 		music(snd_theme);
 		global.players = 2;
 	}
-	if input.action_two_pressed[0] {
+	if keyboard_check_pressed(ord("T")) {
 		room = TUTORIAL;
 		reset_game();
 	}

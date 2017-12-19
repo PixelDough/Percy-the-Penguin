@@ -4,12 +4,12 @@ if currentState == cutSceneStates.Active {
 			draw_set_color(c_white);
 			draw_set_halign(fa_center);
 			draw_text(128, 78, "USE A/D TO MOVE");
-			input.r = false;
+			input.r[0] = false;
 			if obj_player.x < 70 {
-				input.r = true;
+				input.r[0] = true;
 			}
 			if counter >= 90 {
-				input.r = false;
+				input.r[0] = false;
 				currentStep++;
 				counter = 0;
 			}
@@ -19,9 +19,9 @@ if currentState == cutSceneStates.Active {
 			draw_set_color(c_white);
 			draw_set_halign(fa_center);
 			draw_text(128, 78, "USE A/D TO MOVE\nAND F TO JUMP");
-			input.action_one_pressed = false;
+			input.action_one_pressed[0] = false;
 			if counter == 1 or counter == 60 {
-				input.action_one_pressed = true;
+				input.action_one_pressed[0] = true;
 			}
 			if counter >= 100 {
 				currentStep++;
@@ -37,9 +37,9 @@ if currentState == cutSceneStates.Active {
 			} else {
 				draw_text(128, 78, "USE G TO THROW A SNOWBALL\nONLY ONE ON SCREEN\nAT A TIME");
 			}
-			input.action_two_pressed = false;
+			input.action_two_pressed[0] = false;
 			if counter == 1 {
-				input.action_two_pressed = true;
+				input.action_two_pressed[0] = true;
 			}
 			if counter >= 180 {
 				currentStep++;
@@ -51,9 +51,9 @@ if currentState == cutSceneStates.Active {
 			draw_set_color(c_white);
 			draw_set_halign(fa_center);
 			draw_text(128, 78, "HIT ENEMIES WITH SNOWBALLS\nTO STUN THEM");
-			input.action_two_pressed = false;
+			input.action_two_pressed[0] = false;
 			if counter == 60 {
-				input.action_two_pressed = true;
+				input.action_two_pressed[0] = true;
 			}
 			if counter >= 180 {
 				currentStep++;
@@ -75,9 +75,9 @@ if currentState == cutSceneStates.Active {
 			draw_set_color(c_white);
 			draw_set_halign(fa_center);
 			draw_text(128, 78, "HIT ENEMIES WHILE STUNNED\nTO WRAP THEM");
-			input.action_two_pressed = false;
+			input.action_two_pressed[0] = false;
 			if counter == 1 {
-				input.action_two_pressed = true;
+				input.action_two_pressed[0] = true;
 			}
 			if counter >= 30 {
 				currentStep++;
@@ -86,12 +86,12 @@ if currentState == cutSceneStates.Active {
 		break;
 		
 		case 6:
-			input.r = false;
+			input.r[0] = false;
 			if obj_player.x <= 180 {
 				draw_set_color(c_white);
 				draw_set_halign(fa_center);
 				draw_text(128, 78, "HIT ENEMIES WHILE STUNNED\nTO WRAP THEM");
-				input.r = true;
+				input.r[0] = true;
 			} else {
 				currentStep++;
 				counter = 0;
@@ -117,9 +117,9 @@ if currentState == cutSceneStates.Active {
 			draw_set_color(c_white);
 			draw_set_halign(fa_center);
 			draw_text(128, 78, "THEY DISSAPEAR OVER TIME!");
-			input.l = false;
+			input.l[0] = false;
 			if obj_player.x >= 110 {
-				input.l = true;
+				input.l[0] = true;
 			}
 			if counter == 180 {
 				currentStep++;
