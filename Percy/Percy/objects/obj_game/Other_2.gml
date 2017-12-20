@@ -10,3 +10,7 @@ global.paused = false;
 global.lastRoom = parent;
 
 global.players = 1;
+
+window_set_size(window_get_width()*3, window_get_height()*3);
+
+global.version = string(1.1)
